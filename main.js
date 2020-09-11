@@ -9,3 +9,5 @@ let notifications = [
 ];
 
 notifications.some((item) => !item.read) ? (allRead = false) : (allRead = true);
+
+console.log(allRead);
