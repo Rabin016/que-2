@@ -1,5 +1,11 @@
-let arr = [1, 2, 2, 3, 4, 4, 5];
+let allRead = true;
 
-arr = [...new Set(arr)];
+let notifications = [
+    { message: "Lorem", read: true },
+    { message: "Ipsum", read: true },
+    { message: "Dolor", read: true },
+    { message: "Sit", read: false },
+    { message: "Amet", read: true },
+];
 
-console.log(arr);
+notifications.some((item) => !item.read) ? (allRead = false) : (allRead = true);
