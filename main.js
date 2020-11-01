@@ -1,5 +1,3 @@
-let allRead = true;
-
 let notifications = [
     { message: "Lorem", read: true },
     { message: "Ipsum", read: true },
@@ -7,6 +5,8 @@ let notifications = [
     { message: "Sit", read: false },
     { message: "Amet", read: true },
 ];
+
+let allRead = true;
 
 notifications.some((item) => !item.read) ? (allRead = false) : (allRead = true);
 
